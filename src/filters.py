@@ -15,10 +15,10 @@ class Filters:
                }
 
     def __init__(self, kernels=Kernels):
+        # TODO: Implement internal variables
         self.kernels = kernels
         self.now = 0
         self.filter_list = list(self.kernels.keys())
-        # TODO: Implement internal variables
 
     def apply_filter(self, frame, filter_name) -> np.array:
         # TODO: Apply the selected filter kernel to the frame
